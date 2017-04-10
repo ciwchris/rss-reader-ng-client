@@ -26,3 +26,10 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## References
+
+https://github.com/Suhovft49/fresh-news/
+https://github.com/webmaxru/pwa-workshop-angular
+https://stackoverflow.com/questions/43029667/angular-service-worker-not-working-when-offline
