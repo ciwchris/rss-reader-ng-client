@@ -33,3 +33,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 https://github.com/Suhovft49/fresh-news/
 https://github.com/webmaxru/pwa-workshop-angular
 https://stackoverflow.com/questions/43029667/angular-service-worker-not-working-when-offline
+
+## Deploy
+
+ng github-pages:deploy --base-href /rss-reader-ng-client/
