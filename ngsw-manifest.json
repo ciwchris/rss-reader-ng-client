@@ -1,0 +1,28 @@
+{
+  "routing": {
+    "index": "/index.html",
+    "routes": {
+      "/": {
+        "prefix": false
+      }
+    }
+  },
+  "push": {
+    "showNotifications": true,
+    "backgroundOnly": false
+  },
+  "static": {
+    "urls": {
+      "https://ciwchris.github.io/rss-reader-ng-client/polyfills.5214593c6858176ab8e6.bundle.js": "062cd3da569e0a458bd9cc5facda0b3476f67a6a",
+      "https://ciwchris.github.io/rss-reader-ng-client/main.9503661504dc3763de38.bundle.js": "40057a9b2f5f9661fe3e2375104669224c947ea8",
+      "https://ciwchris.github.io/rss-reader-ng-client/scripts.b4029829da1a7fffbeb2.bundle.js": "d2fa288846bb781b34546762cbfe76a3207a374b",
+      "https://ciwchris.github.io/rss-reader-ng-client/sw-register.0ca159d95c1789a30ea4.bundle.js": "ad3c07c60b87531536df5b835e97f2a7d3bcf6d1",
+      "https://ciwchris.github.io/rss-reader-ng-client/vendor.ffde267e2cc6381efb35.bundle.js": "2c352eac3ec215d3e3f345372c01dd88a54e419c",
+      "https://ciwchris.github.io/rss-reader-ng-client/inline.be8ba204d9213116608b.bundle.js": "190bc8d9214247bd7447aa2de1d1b0ac01d3a203",
+      "https://ciwchris.github.io/rss-reader-ng-client/styles.3fb6575912fab4e1913d.bundle.css": "4c8bf396f07a4fd4444eca19e547f9e92ed904e8",
+      "https://ciwchris.github.io/rss-reader-ng-client/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+      "https://ciwchris.github.io/rss-reader-ng-client/index.html": "6a07242c882c647a02cc747c36aee5efe43e5951"
+    },
+    "_generatedFromWebpack": true
+  }
+}
