@@ -1,12 +1,28 @@
 <h1>
-  Feeds
+  RSS Reader
 </h1>
 
-<div *ngFor="let feed of feeds">
-    {{ feed[0].feed }}
-    <ul class="list-group">
-        <li class="list-group-item" *ngFor="let content of feed">
-            <a href="{{content.link}}">{{ content.title }}</a> - {{ content.published }}
+<div class="container completed-list-container" [hidden]="!isSubmitted">
+    <div class="progress">
+      <div
+          class="progress-bar progress-bar-striped active"
+          role="progressbar"
+          aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+          style="width: 100%">
+      </div>
+    </div>
+</div>
+
+<div class="container completed-list-container alert alert-danger" role="alert" [hidden]="!hasError">
+    An error occurred
+</div>
+
+<div class="container" *ngFor="let feed of feeds" [hidden]="!hasResult">
+    <h2>{{ feed[0].feed }}</h2>
+    <ul class="list-unstyled">
+        <li *ngFor="let content of feed | reverse">
+            <a href="{{content.link}}">{{ content.title }}</a>
+            <small class="text-muted">{{ content.published }}</small>
         </li>
     </ul>
 </div>
