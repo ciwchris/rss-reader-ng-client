@@ -1,14 +1,49 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>RssReaderClient</title>
-  <base href="https://ciwchris.github.io/rss-reader-ng-client/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="STA stop notification">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="STA stop notification">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#2F3BA2">
+
+    <!-- Color the status bar on mobile devices -->
+    <meta name="theme-color" content="#bedaae">
+  <title>RSS Reader</title>
+  <base href="/rss-reader-ng-client/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link href="styles.3fb6575912fab4e1913d.bundle.css" rel="stylesheet"/></head>
 <body>
-  <app-root>Loading...</app-root>
-<script type="text/javascript" src="inline.be8ba204d9213116608b.bundle.js"></script><script type="text/javascript" src="polyfills.5214593c6858176ab8e6.bundle.js"></script><script type="text/javascript" src="sw-register.0ca159d95c1789a30ea4.bundle.js"></script><script type="text/javascript" src="scripts.b4029829da1a7fffbeb2.bundle.js"></script><script type="text/javascript" src="vendor.ffde267e2cc6381efb35.bundle.js"></script><script type="text/javascript" src="main.9503661504dc3763de38.bundle.js"></script></body>
+  <app-root>
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height:100vh;">
+        <div style="width: 200px; text-align: center" class="progress">
+          <div
+              class="progress-bar progress-bar-striped progress-bar-animated"
+              role="progressbar"
+              aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+              style="width: 100%">
+          </div>
+        </div>
+    </div>
+  </app-root>
+<script type="text/javascript" src="inline.baeb99aff21401effdb2.bundle.js"></script><script type="text/javascript" src="polyfills.5214593c6858176ab8e6.bundle.js"></script><script type="text/javascript" src="sw-register.0ca159d95c1789a30ea4.bundle.js"></script><script type="text/javascript" src="scripts.b4029829da1a7fffbeb2.bundle.js"></script><script type="text/javascript" src="vendor.ffde267e2cc6381efb35.bundle.js"></script><script type="text/javascript" src="main.2db5aaf19e06363dee52.bundle.js"></script></body>
 </html>

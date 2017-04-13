@@ -11,17 +11,76 @@
     "showNotifications": true,
     "backgroundOnly": false
   },
+  "name": "RSS Reader",
+  "short_name": "RSS Reader",
+  "theme_color": "#bedaae",
+  "background_color": "#bedaae",
+  "display": "standalone",
+  "Scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "assets/images/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "splash_pages": null,
   "static": {
     "urls": {
-      "https://ciwchris.github.io/rss-reader-ng-client/polyfills.5214593c6858176ab8e6.bundle.js": "062cd3da569e0a458bd9cc5facda0b3476f67a6a",
-      "https://ciwchris.github.io/rss-reader-ng-client/main.9503661504dc3763de38.bundle.js": "40057a9b2f5f9661fe3e2375104669224c947ea8",
-      "https://ciwchris.github.io/rss-reader-ng-client/scripts.b4029829da1a7fffbeb2.bundle.js": "d2fa288846bb781b34546762cbfe76a3207a374b",
-      "https://ciwchris.github.io/rss-reader-ng-client/sw-register.0ca159d95c1789a30ea4.bundle.js": "ad3c07c60b87531536df5b835e97f2a7d3bcf6d1",
-      "https://ciwchris.github.io/rss-reader-ng-client/vendor.ffde267e2cc6381efb35.bundle.js": "2c352eac3ec215d3e3f345372c01dd88a54e419c",
-      "https://ciwchris.github.io/rss-reader-ng-client/inline.be8ba204d9213116608b.bundle.js": "190bc8d9214247bd7447aa2de1d1b0ac01d3a203",
-      "https://ciwchris.github.io/rss-reader-ng-client/styles.3fb6575912fab4e1913d.bundle.css": "4c8bf396f07a4fd4444eca19e547f9e92ed904e8",
-      "https://ciwchris.github.io/rss-reader-ng-client/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-      "https://ciwchris.github.io/rss-reader-ng-client/index.html": "6a07242c882c647a02cc747c36aee5efe43e5951"
+      "/rss-reader-ng-client/polyfills.5214593c6858176ab8e6.bundle.js": "062cd3da569e0a458bd9cc5facda0b3476f67a6a",
+      "/rss-reader-ng-client/main.2db5aaf19e06363dee52.bundle.js": "bf10aa71ec77030fbcd18021567e7bedceb8ffa0",
+      "/rss-reader-ng-client/scripts.b4029829da1a7fffbeb2.bundle.js": "d2fa288846bb781b34546762cbfe76a3207a374b",
+      "/rss-reader-ng-client/sw-register.0ca159d95c1789a30ea4.bundle.js": "ad3c07c60b87531536df5b835e97f2a7d3bcf6d1",
+      "/rss-reader-ng-client/vendor.ffde267e2cc6381efb35.bundle.js": "2c352eac3ec215d3e3f345372c01dd88a54e419c",
+      "/rss-reader-ng-client/inline.baeb99aff21401effdb2.bundle.js": "8bd3021183da81714f7b6495d6acf911039c2a44",
+      "/rss-reader-ng-client/styles.3fb6575912fab4e1913d.bundle.css": "4c8bf396f07a4fd4444eca19e547f9e92ed904e8",
+      "/rss-reader-ng-client/assets/images/icons/icon-128x128.png": "04beaef3f73dc102bf20c8e7519dc7e1f8df48e2",
+      "/rss-reader-ng-client/assets/images/icons/icon-144x144.png": "540b1350d892541dc4b9c3a1dee19a82b0157be5",
+      "/rss-reader-ng-client/assets/images/icons/icon-152x152.png": "ffef7b783f65269800f847633522281ee6e23ec6",
+      "/rss-reader-ng-client/assets/images/icons/icon-192x192.png": "d68589b2324130a1386f1282a20d4416557ec8b8",
+      "/rss-reader-ng-client/assets/images/icons/icon-384x384.png": "cc81f3ee75d5586978931095199afd7669c9ab63",
+      "/rss-reader-ng-client/assets/images/icons/icon-512x512.png": "2aadb05035d445f691a38190a88a8c465a83ba48",
+      "/rss-reader-ng-client/assets/images/icons/icon-96x96.png": "e0fbeacb71fca23b4195b33686133c85d76249f0",
+      "/rss-reader-ng-client/assets/images/icons/icon-72x72.png": "45b839a6f9765952809bd52476dfc377733ada2e",
+      "/rss-reader-ng-client/manifest.json": "754a5db206cb3269d093d1c98d01f11fcb823446",
+      "/rss-reader-ng-client/favicon.ico": "cb502249d4d7b36559a4f4a369b3366ce9330892",
+      "/rss-reader-ng-client/index.html": "1853e7938eaf9560fe60d9719adf34a873326a3d"
     },
     "_generatedFromWebpack": true
   }
