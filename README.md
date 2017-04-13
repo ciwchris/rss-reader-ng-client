@@ -36,4 +36,5 @@ https://stackoverflow.com/questions/43029667/angular-service-worker-not-working-
 
 ## Deploy
 
-ng github-pages:deploy --base-href /rss-reader-ng-client/
+ng build --prod --base-href "/rss-reader-ng-client/"
+angular-cli-ghpages 

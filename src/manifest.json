@@ -1,23 +1,11 @@
 {
-  "routing": {
-    "index": "/index.html",
-    "routes": {
-      "/": {
-        "prefix": false
-      }
-    }
-  },
-  "push": {
-    "showNotifications": true,
-    "backgroundOnly": false
-  },
   "name": "RSS Reader",
   "short_name": "RSS Reader",
   "theme_color": "#bedaae",
   "background_color": "#bedaae",
   "display": "standalone",
-  "Scope": "/",
-  "start_url": "/",
+  "Scope": "/rss-reader-ng-client/",
+  "start_url": "/rss-reader-ng-client/index.html?homescreen=1",
   "icons": [
     {
       "src": "assets/images/icons/icon-72x72.png",
@@ -59,6 +47,5 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ],
-  "splash_pages": null
+  ]
 }
