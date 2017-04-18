@@ -1,1 +1,22 @@
-h1 { margin: 20px; }
+.feed-load {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100vh;
+}
+
+.feed-load div {
+    text-align: center;
+    width: 200px;
+}
+
+h1 {
+    margin: 20px;
+}
+
+.new-entries {
+    cursor: pointer;
+    text-align: center;
+    width: 225px;
+}

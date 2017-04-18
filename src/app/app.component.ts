@@ -14,13 +14,15 @@ import { FeedContent } from './feed-content'
 })
 
 export class AppComponent {
-    public feeds: Feeds;
+    public feeds: Feeds[];
     public hasError: boolean;
+    public hasNewResult: boolean;
     public hasResult: boolean;
     public isSubmitted: boolean;
 
     constructor(private feedServiceService: FeedServiceService) {
         this.hasError = false;
+        this.hasNewResult = false;
         this.hasResult = false;
         this.isSubmitted = false;
 
@@ -46,6 +48,34 @@ export class AppComponent {
             console.log('loading from cache');
             this.hasResult = true;
             this.feeds = JSON.parse(localFeeds);
+            this.retrieveRemoteFeeds();
         }
+    }
+
+    displayNewEntries() {
+        const localFeeds = localStorage.getItem('feeds');
+        this.feeds = JSON.parse(localFeeds);
+        this.hasNewResult = false;
+    };
+
+    private retrieveRemoteFeeds() {
+        this.feedServiceService
+            .getContent()
+            .subscribe(feeds => {
+                this.hasNewResult = this.hasNewEntries(feeds);
+                localStorage.setItem('feeds', JSON.stringify(feeds));
+            }, error => {
+                console.log(error);
+            });
+    }
+
+    private hasNewEntries(feeds: Feeds[]): boolean {
+        const localFeeds: Feeds[] = JSON.parse(localStorage.getItem('feeds'));
+        if (localFeeds.length !== feeds.length) return true;
+
+        for (var i = 0; i < feeds.length; i++) {
+            if (feeds[i].feeds.length !== localFeeds[i].feeds.length) return true;
+        }
+        return false;
     }
 }

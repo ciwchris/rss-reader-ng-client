@@ -2,7 +2,7 @@
   RSS Reader
 </h1>
 
-<div class="container" [hidden]="!isSubmitted">
+<div class="container feed-load" [hidden]="!isSubmitted">
     <div class="progress">
       <div
           class="progress-bar progress-bar-striped progress-bar-animated"
@@ -17,12 +17,18 @@
     An error occurred
 </div>
 
+<div class="new-entries container" [hidden]="!hasNewResult">
+    <div (click)="displayNewEntries()" class="alert alert-info" role="alert">
+        <div>Load new entries</div>
+    </div>
+</div>
+
 <div class="container" *ngFor="let feed of feeds" [hidden]="!hasResult">
-    <div *ngIf="feed.length > 0">
-    <h2>{{ feed[0].feed }}</h2>
+    <div *ngIf="feed.feeds.length > 0">
+    <h2>{{ feed.feeds[0].feed }}</h2>
     <ul class="list-unstyled">
-        <li *ngFor="let content of feed | reverse">
-            <a href="{{content.link}}">{{ content.title }}</a>
+        <li *ngFor="let content of feed.feeds | reverse">
+            <a target="_blank" href="{{content.link}}">{{ content.title }}</a>
             <small class="text-muted">{{ content.published }}</small>
         </li>
     </ul>
