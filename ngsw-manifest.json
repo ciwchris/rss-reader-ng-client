@@ -14,11 +14,11 @@
   "static": {
     "urls": {
       "/rss-reader-ng-client/polyfills.5214593c6858176ab8e6.bundle.js": "062cd3da569e0a458bd9cc5facda0b3476f67a6a",
-      "/rss-reader-ng-client/main.2db5aaf19e06363dee52.bundle.js": "bf10aa71ec77030fbcd18021567e7bedceb8ffa0",
+      "/rss-reader-ng-client/main.5e79c959d9b642f77191.bundle.js": "4378995ccb15d38c4d3f28285023bd1f4a4efb81",
       "/rss-reader-ng-client/scripts.b4029829da1a7fffbeb2.bundle.js": "d2fa288846bb781b34546762cbfe76a3207a374b",
       "/rss-reader-ng-client/sw-register.0ca159d95c1789a30ea4.bundle.js": "ad3c07c60b87531536df5b835e97f2a7d3bcf6d1",
-      "/rss-reader-ng-client/vendor.ffde267e2cc6381efb35.bundle.js": "2c352eac3ec215d3e3f345372c01dd88a54e419c",
-      "/rss-reader-ng-client/inline.baeb99aff21401effdb2.bundle.js": "8bd3021183da81714f7b6495d6acf911039c2a44",
+      "/rss-reader-ng-client/vendor.1e595ea51f800468c219.bundle.js": "319798965318f3a6d5dc00dfdd006b40cc9448f5",
+      "/rss-reader-ng-client/inline.739fb31b4e8e27733e06.bundle.js": "81c5076de917a661b415e57526827ee8d900023f",
       "/rss-reader-ng-client/styles.3fb6575912fab4e1913d.bundle.css": "4c8bf396f07a4fd4444eca19e547f9e92ed904e8",
       "/rss-reader-ng-client/assets/images/icons/icon-128x128.png": "6ab6a54372aef7ba5fe3004c578d7639411dc05a",
       "/rss-reader-ng-client/assets/images/icons/icon-144x144.png": "d832358bcfe7895d1f4e4af38680556f3669c6bf",
@@ -30,7 +30,7 @@
       "/rss-reader-ng-client/assets/images/icons/icon-96x96.png": "f15c83c7aed1bd4e5d35cf1895fa521552b1dc66",
       "/rss-reader-ng-client/assets/manifest.json": "f6065d36149569f6aa6da3bf488dbf0ace5bc5c9",
       "/rss-reader-ng-client/favicon.ico": "cb502249d4d7b36559a4f4a369b3366ce9330892",
-      "/rss-reader-ng-client/index.html": "c2b82ce1eb8fabc8b31813bd8d69dbde1f811bf3"
+      "/rss-reader-ng-client/index.html": "617ed71af8337be0463e071fea49fce17e6734fb"
     },
     "_generatedFromWebpack": true
   }
