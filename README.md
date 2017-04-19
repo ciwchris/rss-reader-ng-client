@@ -16,3 +16,11 @@ https://stackoverflow.com/questions/43029667/angular-service-worker-not-working-
 1. ng build --prod --base-href "/rss-reader-ng-client/"
 1. copy content from dist folder to ../rss-reader-ng-client-gh-pages/
 1. change to that directory, git and push changes to gh-pages branch
+
+## TODO
+
+- Fix feed name in azure function
+- Accept push notifications on server
+- Create queue azure function (or other means) to trigger notification
+- Update PWA to register for notifications
+- Detect when refresh occurs, too force reload from server and not use cache

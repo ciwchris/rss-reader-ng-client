@@ -74,7 +74,12 @@ export class AppComponent {
         if (localFeeds.length !== feeds.length) return true;
 
         for (var i = 0; i < feeds.length; i++) {
-            if (feeds[i].feeds.length !== localFeeds[i].feeds.length) return true;
+            const currentFeeds = feeds[i].feeds;
+            const currentLocalFeeds = localFeeds[i].feeds;
+
+            if (currentFeeds.length !== currentLocalFeeds.length ||
+                (currentFeeds.length > 0 &&
+                    currentFeeds[currentFeeds.length - 1].title !== currentLocalFeeds[currentFeeds.length - 1].title)) return true;
         }
         return false;
     }

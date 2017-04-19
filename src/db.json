@@ -1,11 +1,12 @@
 {
     "QueryFeed": [
+        [],
         [
-        {"feed": "feed", "title": "title", "link": "link", "published": "published"}
+            {"feed": "feed", "title": "title", "link": "link", "published": "published"}
         ],
         [
             {"feed": "feed2", "title": "title2-1", "link": "link", "published": "published"},
-        {"feed": "feed2", "title": "title 2-2", "link": "link", "published": "published 2"}
+            {"feed": "feed2", "title": "title 2-2", "link": "link", "published": "published 2"}
         ]
     ]
 }
