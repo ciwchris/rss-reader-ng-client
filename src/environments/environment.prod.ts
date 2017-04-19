@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+    production: true,
+    queryUrl: "https://rss-reader.azurewebsites.net/api/QueryFeed"
 };

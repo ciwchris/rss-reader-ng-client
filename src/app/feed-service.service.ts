@@ -5,6 +5,8 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
 
+import { environment } from '../environments/environment';
+
 import { Feeds } from './feeds';
 import { FeedContent } from './feed-content';
 
@@ -19,7 +21,7 @@ export class FeedServiceService {
         const options = new RequestOptions({ headers: headers });
 
         return this.http
-            .get('https://rss-reader.azurewebsites.net/api/QueryFeed', options)
+            .get(environment.queryUrl, options)
             .map(this.extractData)
             .catch(this.handleError);
     }
