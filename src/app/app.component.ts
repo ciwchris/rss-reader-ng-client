@@ -16,14 +16,14 @@ import { FeedContent } from './feed-content'
 export class AppComponent {
     public feeds: Feeds[];
     public hasError: boolean;
-    public hasNewResult: boolean;
     public hasResult: boolean;
+    public notificationMessage: string;
     public isSubmitted: boolean;
 
     constructor(private feedServiceService: FeedServiceService) {
         this.hasError = false;
-        this.hasNewResult = false;
         this.hasResult = false;
+        this.notificationMessage = '';
         this.isSubmitted = false;
 
         const localFeeds = localStorage.getItem('feeds');
@@ -53,18 +53,28 @@ export class AppComponent {
     }
 
     displayNewEntries() {
-        const localFeeds = localStorage.getItem('feeds');
-        this.feeds = JSON.parse(localFeeds);
-        this.hasNewResult = false;
+        if (/^Updates/.test(this.notificationMessage)) {
+            const localFeeds = localStorage.getItem('feeds');
+            this.feeds = JSON.parse(localFeeds);
+        }
+
+        this.notificationMessage = '';
     };
 
     private retrieveRemoteFeeds() {
+        this.notificationMessage = 'Checking for updates';
         this.feedServiceService
             .getContent()
             .subscribe(feeds => {
-                this.hasNewResult = this.hasNewEntries(feeds);
-                localStorage.setItem('feeds', JSON.stringify(feeds));
+                if (this.hasNewEntries(feeds)) {
+                    this.notificationMessage = 'Updates to entries found';
+                    localStorage.setItem('feeds', JSON.stringify(feeds));
+                } else {
+                    this.notificationMessage = '';
+                }
+
             }, error => {
+                this.notificationMessage = 'Could not check updates';
                 console.log(error);
             });
     }

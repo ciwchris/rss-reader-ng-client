@@ -19,7 +19,8 @@ https://stackoverflow.com/questions/43029667/angular-service-worker-not-working-
 
 ## TODO
 
-- Fix feed name in azure function
+- Show that updates are being loaded
+- Customize the add to home screen message
 - Accept push notifications on server
 - Create queue azure function (or other means) to trigger notification
 - Update PWA to register for notifications

@@ -17,9 +17,9 @@
     An error occurred
 </div>
 
-<div class="new-entries container" [hidden]="!hasNewResult">
+<div class="new-entries container" [hidden]="notificationMessage === ''">
     <div (click)="displayNewEntries()" class="alert alert-info" role="alert">
-        <div>Updates to entries found</div>
+        <div>{{ notificationMessage }}</div>
     </div>
 </div>
 
@@ -27,7 +27,7 @@
     <div *ngIf="feed.feeds.length > 0">
     <h2>{{ feed.feeds[0].feed }}</h2>
     <ul class="list-unstyled">
-        <li *ngFor="let content of feed.feeds | reverse">
+        <li *ngFor="let content of feed.feeds">
             <a target="_blank" href="{{content.link}}">{{ content.title }}</a>
             <small class="text-muted">{{ content.published }}</small>
         </li>
