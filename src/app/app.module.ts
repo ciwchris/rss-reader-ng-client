@@ -7,10 +7,12 @@ import { NgArrayPipesModule } from 'ngx-pipes';
 
 import { AppComponent } from './app.component';
 import { FeedServiceService } from './feed-service.service';
+import { SwSandboxComponent } from './sw-sandbox/sw-sandbox.component';
 
 @NgModule({
     declarations: [
         AppComponent,
+        SwSandboxComponent
     ],
     imports: [
         BrowserModule,
