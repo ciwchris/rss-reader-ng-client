@@ -58,8 +58,10 @@ export class AppComponent {
             this.feeds = JSON.parse(localFeeds);
         }
 
-        this.notificationMessage = '';
-    };
+        if (!/^Checking/.test(this.notificationMessage)) {
+            this.notificationMessage = '';
+        }
+    }
 
     private retrieveRemoteFeeds() {
         this.notificationMessage = 'Checking for updates';
