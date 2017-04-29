@@ -42,17 +42,11 @@ export class SwSandboxComponent implements OnInit {
         navigator['serviceWorker']
             .getRegistration(this.swScope)
             .then(registration => {
-
-                console.dir(registration);
-
                 registration.pushManager
                     .subscribe({ userVisibleOnly: true, applicationServerKey: convertedVapidKey })
                     .then(function(subscription) {
-
                         console.log(JSON.stringify(subscription));
-
-
-                        return fetch("https://sta-notification.azurewebsites.net/api/web-push", { //https://pwa-workshop-api.herokuapp.com VS http://localhost:3000
+                        return fetch("https://rss-reader.azurewebsites.net/api/WebPushSubscribe", {
                             method: "POST",
                             body: JSON.stringify({ action: 'subscribe', subscription: subscription }),
                             headers: { 'Content-Type': 'application/json' }
@@ -66,9 +60,6 @@ export class SwSandboxComponent implements OnInit {
                             .catch(error => {
                                 console.log('Subscription request failed', error)
                             });
-
-
-
                     });
 
             })
@@ -83,13 +74,33 @@ export class SwSandboxComponent implements OnInit {
         navigator['serviceWorker']
             .getRegistration(this.swScope)
             .then(registration => {
-
                 registration.pushManager.getSubscription().then(function(subscription) {
-                    subscription.unsubscribe().then(success => {
-                        console.log('Unsubscription successful', success)
-                    }).catch(error => {
-                        console.log('Unsubscription failed', error)
+                    // Use to unsubscribe from db
+                    console.log(JSON.parse(JSON.stringify(subscription)).keys.auth);
+
+                    return fetch("https://rss-reader.azurewebsites.net/api/WebPushUnsubscribe", {
+                        method: "POST",
+                        body: JSON.stringify({ subscription: subscription }),
+                        headers: { 'Content-Type': 'application/json' }
                     })
+                        .then(response => {
+                            if (!response.ok) {
+                                throw new Error(response);
+                            }
+
+                            return response.json()
+                        })
+                        .then(json => {
+                            console.log('Unsubscription request answer', json)
+                            subscription.unsubscribe().then(success => {
+                                console.log('Unsubscription successful', success)
+                            }).catch(error => {
+                                console.log('Unsubscription failed', error)
+                            })
+                        })
+                        .catch(error => {
+                            console.log('Unsubscription request failed', error)
+                        });
                 })
 
             })
