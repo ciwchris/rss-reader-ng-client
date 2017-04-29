@@ -14,23 +14,23 @@
   "static": {
     "urls": {
       "/rss-reader-ng-client/polyfills.5214593c6858176ab8e6.bundle.js": "062cd3da569e0a458bd9cc5facda0b3476f67a6a",
-      "/rss-reader-ng-client/main.43240afa42a4da341176.bundle.js": "f69c907f8b32f4b455777e2ae34a8e37e35516ff",
+      "/rss-reader-ng-client/main.5ad0eedd4b99ebce4320.bundle.js": "09c626c4bae089262d8adcad06a51d7a8cf6d631",
       "/rss-reader-ng-client/scripts.b4029829da1a7fffbeb2.bundle.js": "d2fa288846bb781b34546762cbfe76a3207a374b",
       "/rss-reader-ng-client/sw-register.0ca159d95c1789a30ea4.bundle.js": "ad3c07c60b87531536df5b835e97f2a7d3bcf6d1",
-      "/rss-reader-ng-client/vendor.8c6b3717652d99959a64.bundle.js": "e3ddc2ea4ab84e1e48a3dfab7acfae2b0fb23a80",
-      "/rss-reader-ng-client/inline.039c72ec2052613f7119.bundle.js": "34aa4741a37e215f4c487eadcf1ff7faa776db0a",
+      "/rss-reader-ng-client/vendor.5b70b42d9140d31d544f.bundle.js": "e526efc9f161f4c9fe8c9ad0d34b260900b17c22",
+      "/rss-reader-ng-client/inline.e2e15209f15e811ab7e4.bundle.js": "0ddf2e9cbd76db03428e4b13e9d9df4d79bdc35e",
       "/rss-reader-ng-client/styles.3fb6575912fab4e1913d.bundle.css": "4c8bf396f07a4fd4444eca19e547f9e92ed904e8",
       "/rss-reader-ng-client/assets/images/icons/icon-128x128.png": "6ab6a54372aef7ba5fe3004c578d7639411dc05a",
       "/rss-reader-ng-client/assets/images/icons/icon-144x144.png": "d832358bcfe7895d1f4e4af38680556f3669c6bf",
       "/rss-reader-ng-client/assets/images/icons/icon-152x152.png": "a6b55818f017d045055c9469cdada386a55beb67",
       "/rss-reader-ng-client/assets/images/icons/icon-192x192.png": "bb1615ce07e00f9da47558e7a7cab0de706dab3e",
+      "/rss-reader-ng-client/assets/images/icons/icon-512x512.png": "c615e6f7bbd0add9d666fe36e9e297510e4ddebd",
       "/rss-reader-ng-client/assets/images/icons/icon-384x384.png": "865fc4a425af67d41179d9d810ca9012675510f8",
       "/rss-reader-ng-client/assets/images/icons/icon-72x72.png": "7d8207f77e59de37815612f8520e614888ed9ac3",
-      "/rss-reader-ng-client/assets/images/icons/icon-512x512.png": "c615e6f7bbd0add9d666fe36e9e297510e4ddebd",
       "/rss-reader-ng-client/assets/images/icons/icon-96x96.png": "f15c83c7aed1bd4e5d35cf1895fa521552b1dc66",
       "/rss-reader-ng-client/assets/manifest.json": "f6065d36149569f6aa6da3bf488dbf0ace5bc5c9",
       "/rss-reader-ng-client/favicon.ico": "cb502249d4d7b36559a4f4a369b3366ce9330892",
-      "/rss-reader-ng-client/index.html": "71452223bb3171ef79c036a4d9da7f67414b42ae"
+      "/rss-reader-ng-client/index.html": "70f119ff089c4729574d863d4f59ab3c2881d617"
     },
     "_generatedFromWebpack": true
   }
