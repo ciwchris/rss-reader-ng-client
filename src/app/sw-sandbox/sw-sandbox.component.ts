@@ -14,16 +14,29 @@ export class SwSandboxComponent implements OnInit {
 
     private swScope: string = './';
     private swUrl: string = './worker-basic.min.js';
+    public isSubscribed: boolean = false;
+    public hasSubscriptionActionOccurred: boolean = false;
 
     constructor(public sw: NgServiceWorker) {
     }
 
     ngOnInit() {
         this.sw.log().subscribe(message => console.log(message));
+        navigator['serviceWorker']
+            .getRegistration(this.swScope)
+            .then(registration => {
+                registration.pushManager.getSubscription().then(function(subscription) {
+                    return subscription !== null;
+                }).then(isSubscribedResult => {
+                    // this.isSubscribed does not exist in above then, but seems to work here
+                    this.isSubscribed = isSubscribedResult;
+                });
+            });
     }
 
 
     subscribeToPush() {
+        this.hasSubscriptionActionOccurred = true;
 
         function urlBase64ToUint8Array(base64String) {
             const padding = '='.repeat((4 - base64String.length % 4) % 4);
@@ -46,6 +59,7 @@ export class SwSandboxComponent implements OnInit {
                     .subscribe({ userVisibleOnly: true, applicationServerKey: convertedVapidKey })
                     .then(function(subscription) {
                         console.log(JSON.stringify(subscription));
+
                         return fetch("https://rss-reader.azurewebsites.net/api/WebPushSubscribe", {
                             method: "POST",
                             body: JSON.stringify({ action: 'subscribe', subscription: subscription }),
@@ -70,6 +84,7 @@ export class SwSandboxComponent implements OnInit {
     }
 
     unsubscribeFromPush() {
+        this.hasSubscriptionActionOccurred = true;
 
         navigator['serviceWorker']
             .getRegistration(this.swScope)
