@@ -30,7 +30,7 @@
     <h2>{{ feed.feeds[0].feed }}</h2>
     <ul class="list-unstyled">
         <li *ngFor="let content of feed.feeds">
-            <a target="_blank" href="{{content.link}}">{{ content.title }}</a>
+            <a rel="noopener" href="{{content.link}}">{{ content.title }}</a>
             <small class="text-muted">{{ content.published }}</small>
         </li>
     </ul>

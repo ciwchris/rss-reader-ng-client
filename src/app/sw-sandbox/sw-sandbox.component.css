@@ -1,0 +1,17 @@
+.subscription-info {
+    padding-bottom: 30px;
+    text-align: center;
+    width: 275px;
+}
+
+.subscription-info .btn-info {
+    cursor: pointer;
+    background-color: #bedaae;
+    border-color: #84b865;
+}
+
+.subscription-info .btn-info:focus {
+    -webkit-box-shadow: 0 0 0 2px #84b865;
+    box-shadow: 0 0 0 2px #84b865;
+}
+

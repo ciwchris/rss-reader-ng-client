@@ -19,9 +19,6 @@ https://stackoverflow.com/questions/43029667/angular-service-worker-not-working-
 
 ## TODO
 
-- Show that updates are being loaded
-- Customize the add to home screen message
-- Accept push notifications on server
-- Create queue azure function (or other means) to trigger notification
-- Update PWA to register for notifications
+- Customize notification message with images or links and such
+- When push occurs tie in PWA to automatically retrieve the new content
 - Detect when refresh occurs, too force reload from server and not use cache
