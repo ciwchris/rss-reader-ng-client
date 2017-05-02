@@ -1,8 +1,8 @@
 {
   "routing": {
-    "index": "/index.html",
+    "index": "/rss-reader-ng-client/index.html",
     "routes": {
-      "/": {
+      "/rss-reader-ng-client/": {
         "prefix": false
       }
     }
