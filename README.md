@@ -12,6 +12,9 @@
 - https://stackoverflow.com/questions/43029667/angular-service-worker-not-working-when-offline
 - https://developer.mozilla.org/en-US/docs/Web/Events/notificationclick
 - https://developers.google.com/web/fundamentals/engage-and-retain/push-notifications/display-a-notification
+- https://romannurik.github.io/AndroidAssetStudio/icons-notification.html#source.type=clipart&source.clipart=art_track&source.space.trim=1&source.space.pad=0&name=ic_stat_art_track
+- https://developers.google.com/web/fundamentals/getting-started/codelabs/debugging-service-workers/
+- https://github.com/alxhub/io17
 
 ## Configure Chrome Dev
 
